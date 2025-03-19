@@ -8,7 +8,7 @@ I implement a collaborative graphical editor — a much more rudimentary version
 
 The basic client/server set-up is as follows. Each client editor has a thread for talking to the sketch server, along with a main thread for user interaction. The server has a main thread to get the incoming requests to join the shared sketch, along with separate threads for communicating with the clients. The client tells the server about its user's drawing actions. The server then tells all the clients about all the drawing actions of each of them.
 
-My code is implemented on top of a minimal scaffold code provided by the instructor. You can see the contents of the scaffold code in editor.zip in the above course website. You can assume all other code to have been programmed by myself with some theoretical help provided by my lab partner, Stephen Adjel (we agreed that I should implement most of Pset 6). 
+My code is implemented on top of a minimal scaffold code provided by the instructor. You can see the contents of the scaffold code in editor.zip in the above course website. You can assume all other code to have been programmed by myself with some theoretical help provided by my lab partner, Stephen Adjel (we agreed that I should implement most of Pset 6). Specifically, all of Editor.java and Interpreter.java --- the core aspects of the program that implement the multi-threaded architecture --- was implemented by myself. 
 
 Some explanation on the accompanying files: 
 
